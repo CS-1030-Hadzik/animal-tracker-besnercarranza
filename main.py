@@ -4,7 +4,9 @@ from dog import Dog
 
 if __name__ == "__main__":
     # TODO: Create an instance of the Animal class
-    brown_dog = Animal("jacob", "canine", "bulldog")
+    my_animal = Animal("jacob", "canine", "bulldog")
+    print(my_animal)
+    my_animal.speak
     black_dog = Animal("marsh", "canine", "poodle")
     yellow_dog = Animal("leah", "canine", "golden retriever")
     
@@ -16,7 +18,4 @@ if __name__ == "__main__":
     # TODO: Call the method to make the dog-specific sound
 
     # TODO print out all the animals
-    all_animals = Dog.get_all_Dog()
-    for animal in all_dogs:
-            print(animal)
 
