@@ -14,4 +14,4 @@ class Dog(Animal):
         return f"Kingdom: '{self.kingdom}', Name: '{self.name}' Species: '{self.species}', Breed '{self.breed}"
     
     def speak(self):
-        print("the dog barks")
+        print("the dog barks.")
