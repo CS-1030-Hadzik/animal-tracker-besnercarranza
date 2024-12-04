@@ -8,9 +8,10 @@ class Dog(animal):
     # The constructor should accept name, species, and breed as parameters.
     
     # TODO: Override the __str__ method to include the breed.
+    def __str__(breed):
     # Example output:
     # Kingdom: 'kingdom attribute', Name: 'name attribute', Species: 'species attribute', Breed: 'breed attribute'
-    
+    return f""
     # TODO: Add a method for the dog to make a specific sound. 
     # Call the method `speak` and make it output a specific message like 
     # "The dog barks.

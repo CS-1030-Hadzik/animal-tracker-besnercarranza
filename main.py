@@ -16,3 +16,7 @@ if __name__ == "__main__":
     # TODO: Call the method to make the dog-specific sound
 
     # TODO print out all the animals
+    all_animals = Dog.get_all_Dog()
+    for animal in all_dogs:
+            print(animal)
+
