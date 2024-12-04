@@ -1,30 +1,26 @@
-class Animal():
+class Animal:
     """
     Base class representing a generic animal.
     """
-    all_animal = []
     # Class-level attribute
     kingdom = "Animalia"
+    all_animals = []
     # TODO create a class-level attribute that is a list of all the Animal objects
-    def __init__(self, name, species, breed):
+    def __init__(self, name, species):
         self.name = name
-        self.species = species
-        self.breed = breed 
+        self.species = species 
 
-        Animal.all_animal.append(self)
+        Animal.all_animals.append(self)
 
-        def __str__(self):
-            return f"animal: {self.name}, species {self.species}, breed {self.breed}"
+    def speak(self):
+        print("The animal makes a noise")
 
-            @classmethod
-            def get_all_animals(cls):
-                return cls.all_animal
+    def __str__(self):
+        return f"Kingdom: '{self.kingdom}', Name: '{self.name}' Species: '{self.species}'"
 
-    # TODO create the initializer for Animal with name and species as attributs
-
-    # TODO: Add a method to make a generic sound 
-    # Call the method `speak` and make it output a specific message like 
-    # "The animal makes a noise.""
+    @classmethod
+    def get_all_animals(cls):
+        return cls.all_animals
 
     # TODO __str__ method for string representation
     # Example output
